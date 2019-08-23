@@ -5,16 +5,23 @@ import CharacterList from "./components/CharacterList";
 import LocationsList from "./components/LocationsList";
 import { logValidationWarning } from "jest-validate/build/utils";
 import EpisodeList from "./components/EpisodeList";
+import styled from 'styled-components';
+
+const Main = styled.main`
+background: #1b5c47;
+`;
+
+
 
 
 export default function App() {
   return (
-    <main>
+    <Main>
       <Header />'
-      <EpisodeList/>
+      {/* <EpisodeList/> */}
       {/* <CharacterList/> */}
       {/* <LocationsList/> */}
       {/* <TabNav /> */}
-    </main>
+    </Main>
   );
 }
