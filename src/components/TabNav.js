@@ -17,6 +17,7 @@ border: 3px solid whitesmoke;
 padding: 20px;
 font-size: 20px;
 border-radius 15px;
+margin-bottom: 20px;
 `;
 
 const Links = styled.div`

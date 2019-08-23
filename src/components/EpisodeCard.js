@@ -9,7 +9,7 @@ border-radius: 8px;
 background: #45997e;
 color: whitesmoke;
 box-shadow: 5px 10px 8px black;
-font-family: 'Acme', sans-serif;
+
 `;
 
 
