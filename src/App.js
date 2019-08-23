@@ -4,12 +4,14 @@ import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import LocationsList from "./components/LocationsList";
 import { logValidationWarning } from "jest-validate/build/utils";
+import EpisodeList from "./components/EpisodeList";
 
 
 export default function App() {
   return (
     <main>
-      <Header />
+      <Header />'
+      <EpisodeList/>
       {/* <CharacterList/> */}
       {/* <LocationsList/> */}
       {/* <TabNav /> */}
