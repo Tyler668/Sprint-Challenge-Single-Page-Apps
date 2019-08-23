@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
+import CharacterCard from "./CharacterCard";
 
 export default function CharacterList() {
   const [charsInfo, setCharsInfo] = useState([]);
@@ -19,7 +20,7 @@ export default function CharacterList() {
   return (
     <section className="character-list grid-view">
       {charsInfo.map(item => (
-        <CharacterCard info={item} />
+        <CharacterCard info={item} key = {item.id}/>
       ))};
     </section>
   );
