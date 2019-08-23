@@ -17,7 +17,7 @@ main {
 .grid-view {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .page-view {
@@ -26,6 +26,7 @@ main {
 
 .grid-view div.card.ui {
   margin: 1.25rem;
+
 }
 
 

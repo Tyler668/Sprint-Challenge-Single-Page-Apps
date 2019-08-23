@@ -25,7 +25,7 @@ font-weight: bold;
 align-items: center;
 align-content: center;
 padding: 5px;
-border-radius: 8px;
+
 `;
 
 
@@ -51,47 +51,4 @@ export default function TabNav() {
         </Nav>
     );
 }
-
-// const panes = [
-//     {
-//         menuItem: 'Home',
-//         render: () =>
-//             <NavLink to = {'/'}>
-//                 {/* <Tab.Pane attached={false}>Tab 1 Content</Tab.Pane> */}
-//             </NavLink>
-//         ,
-//     },
-//     {
-//         menuItem: 'Characters',
-//         render: () =>
-//             <NavLink to={'/characters'}>
-//                 {/* <Tab.Pane attached={false}>Tab 2 Content</Tab.Pane> */}
-//             </NavLink>
-//         ,
-//     },
-//     {
-//         menuItem: 'Locations',
-//         render: () =>
-//             <NavLink to={'/locations'}>
-//                 {/* <Tab.Pane attached={false}>Tab 3 Content</Tab.Pane> */}
-//             </NavLink>
-//         ,
-//     },
-//     {
-//         menuItem: 'Episodes',
-//         render: () =>
-//             <NavLink to={'/episodes'}>
-//                 {/* <Tab.Pane attached={false}>Tab 3 Content</Tab.Pane> */}
-//             </NavLink>
-//         ,
-//     },
-// ]
-
-
-
-
-
-// const TabExamplePointing = () => <Tab menu={{ pointing: true }} panes={panes} />
-
-
 
