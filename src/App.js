@@ -3,7 +3,6 @@ import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import LocationsList from "./components/LocationsList";
-import { logValidationWarning } from "jest-validate/build/utils";
 import EpisodeList from "./components/EpisodeList";
 import styled from 'styled-components';
 import { Route } from "react-router-dom";
@@ -23,7 +22,6 @@ export default function App() {
     <Router>
       <Main>
       <TabNav/>
-        <Header />
       <Route exact path="/" render={props => <WelcomePage {...props} />} />
       <Route exact path="/characters" render={props => <CharacterList {...props} characters={CharacterList}/>} />
       <Route exact path="/locations" render={props => <LocationsList {...props} locations={LocationsList}/>} />

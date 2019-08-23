@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import EpisodeCard from "./EpisodeCard";
-import ServerError from "./ServerError";
-import { Route } from "react-router-dom";
-import { Redirect } from 'react-router-dom';
 
-export default function EpisodeList() {
+
+export default function EpisodeList(props) {
     const [episodesInfo, setEpisodesInfo] = useState([]);
-
+    //`https://rickandmortyapi.com/api/episode/
 
     useEffect(() => {
         Axios.get(`https://rickandmortyapi.com/api/episode/`)
@@ -17,7 +15,7 @@ export default function EpisodeList() {
                 setEpisodesInfo(episodeList);
             })
             .catch(error => {
-               console.log("Error:" ,error)
+                props.history.push('/error');
             });
     }, []);
 
