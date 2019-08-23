@@ -27,12 +27,7 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
-.main-img {
-  display: block;
-  border-radius: 100%;
-  margin: 0 auto;
-} */
+
 
 header h1 {
   text-align: center;
@@ -44,9 +39,8 @@ h1{
 }
 
 
-/* .charCard{
-  border: 1px solid black;
-  margin-bottom: 20px;
-  padding: 10px;
+.active{
+  background: #45997e;
+  height: 100%;
   border-radius: 8px;
-} */
+}

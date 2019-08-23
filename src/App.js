@@ -21,12 +21,13 @@ export default function App() {
   return (
     <Router>
       <Main>
+      <TabNav/>
         <Header />'
-        {/* <TabNav/> */}
+        
       <Route exact path="/" render={props => <WelcomePage {...props} />} />
-      <Route  path="/characters" render={props => <CharacterList {...props} characters={CharacterList}/>} />
-      <Route  path="/locations" render={props => <LocationsList {...props} locations={LocationsList}/>} />
-      <Route  path="/episodes" render={props => <EpisodeList {...props} episodes={EpisodeList}/>} />
+      <Route exact path="/characters" render={props => <CharacterList {...props} characters={CharacterList}/>} />
+      <Route exact path="/locations" render={props => <LocationsList {...props} locations={LocationsList}/>} />
+      <Route exact path="/episodes" render={props => <EpisodeList {...props} episodes={EpisodeList}/>} />
 
       </Main>
     </Router>
